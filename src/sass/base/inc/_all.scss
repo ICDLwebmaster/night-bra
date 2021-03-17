@@ -1,0 +1,69 @@
+#loader{
+  &-bg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .5;
+  }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  line-height: $bodyLineHeight;
+  letter-spacing: $bodyLetterSpacing;
+  font-variant-ligatures: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  color: $main-color;
+  position: relative;
+  background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: .5s;
+  transition: .5s;
+}
+
+a:hover {
+  opacity: .8;
+  transition: .5s;
+  transition: .5s
+}
+
+.d-fl {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
