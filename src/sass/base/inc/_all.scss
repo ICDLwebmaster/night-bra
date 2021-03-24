@@ -50,17 +50,17 @@ a:hover {
   transition: .5s
 }
 
-.isPc {
-  display: block;
-  @include mediaQuerySp() {
-    display: none;
-  }
-}
-
 .isSp {
   display: block;
   @include mediaQueryPc() {
-    display: none;
+    display: none !important;
+  }
+}
+
+.isPc {
+  display: block;
+  @include mediaQuerySp() {
+    display: none !important;
   }
 }
 
