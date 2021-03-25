@@ -25,6 +25,20 @@ $(function () {
       addItemBgWidth();
     });
 
+
+    // SP nav toggler click
+    $('.spnav-toggler').on('click', function () {
+      if ($(this).hasClass('activenav')) {
+        $('body').removeClass('no-scroll');
+        $(this).removeClass('activenav');
+        $('.sp-menu').removeClass('activespnav');
+      } else {
+        $('body').addClass('no-scroll');
+        $(this).addClass('activenav');
+        $('.sp-menu').addClass('activespnav');
+      }
+    });
+
   });
 });
 
