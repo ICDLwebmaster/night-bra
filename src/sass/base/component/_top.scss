@@ -240,7 +240,54 @@
     }
   }
   &-ranking {
+    &-inner {
+      margin-top: 40px;
+      &-ttl {
+        h2 {
+          font-family: $font_carter;
+        }
+      }
+      &-content {
+        &-fl {
+          margin-top: 50px;
+          ul {
+            li {
+              position: relative;
+              @include createCol(3, 20px, 0px);
+              a {
+                figure {
+                  img {
 
+                  }
+                }
+                .ranking-num {
+                  position: absolute;
+                  top: -20px;
+                  left: -10px;
+                  width: 32px;
+                  height: 32px;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  text-align: center;
+                  align-items: center;
+                  justify-content: center;
+                  background: #FC8223;
+                  span {
+                    color: #ffffff;
+                    font-family: $font_carter;
+                    font-weight: bold;
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   &-instagram {
     margin-top: 100px;
